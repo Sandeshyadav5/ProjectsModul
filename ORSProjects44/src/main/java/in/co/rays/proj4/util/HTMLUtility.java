@@ -1,5 +1,6 @@
 package in.co.rays.proj4.util;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -33,7 +34,7 @@ public class HTMLUtility {
 
 	public static String getList(String name, String selectedVal, List list) {
 
-		// Collections.sort(list);
+		 Collections.sort(list);
 
 		List<DropdownListBean> dd = (List<DropdownListBean>) list;
 
@@ -74,21 +75,21 @@ public class HTMLUtility {
 	public static void testGetListByList() throws Exception {
 
 		RoleModel model = new RoleModel();
-
-		// UserModel model = new UserModel();
-
-//		List list = model.list();
-
-		String selectedValue = "1";
-
+//
+//		 UserModel model1 = new UserModel();
+//
+//		List list = model1.list();
+//
+//		String selectedValue = "1";
+//
 //		String htmlSelectFromList = HTMLUtility.getList("role", selectedValue, list);
-
+//
 //		System.out.println(htmlSelectFromList);
 	}
 
 	public static void main(String[] args) throws Exception {
 
-		// testGetListByMap();
+//		 testGetListByMap();
 
 		testGetListByList();
 
